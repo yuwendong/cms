@@ -1,0 +1,144 @@
+a:hover {
+	color: #377EFF;
+	text-decoration: none;
+}
+body {
+	background: url('../image/footer-light.png') repeat-x scroll 0 bottom #FFFFFF;
+}
+#currency {
+	color: #666666;
+}
+#currency a {
+	color: #666666;
+}
+#header #cart .heading h4 {
+	color: #666666;
+}
+#header #cart .heading a {
+	color: #666666;
+}
+#header #welcome {
+	color: #666666;
+}
+#menu > ul > li > a {
+	color: #666666;
+    text-shadow: none;
+}
+#menu > ul > li > div > ul > li > a {
+	color: #666666;
+    text-shadow: 0 0 0;
+}	
+#wrapper {
+	background: url('../image/glass-light.jpg') no-repeat scroll center 0 #FFFFFF;
+}
+
+#main-menu .menu-left {
+	background: url('../image/menu-flip-light.png') no-repeat scroll 0 0 transparent;
+}   
+
+#main-menu .menu-middle {
+    background: url('../image/menu-flip-light.png') repeat-x scroll 0 -57px transparent;
+}
+
+#main-menu .menu-right {
+    background: url('../image/menu-flip-light.png') no-repeat scroll 0 -114px transparent;
+}
+#main-menu .menu a:hover {
+background: url('../image/menu-flip-light.png') 0 -171px repeat-x;
+}
+#currency a:hover {
+	color: #377EFF;
+}
+#currency a b {
+	color: #377EFF;
+	text-decoration: none;
+}
+#header #cart .heading a:hover {
+	color: #377EFF;
+}
+#header #welcome a {
+	color: #377EFF;
+}
+#header .links a {
+	color: #666666;
+}
+#header .links a:hover {
+	color: #377EFF;
+}
+#menu > ul > li:hover {
+	background: url('../image/menu-flip-light.png') 0 -171px repeat-x;
+}
+#menu > ul > li > div {
+	border: 1px solid #cccccc;
+	background: #e5e5e5;
+}
+#menu > ul > li ul > li > a:hover {
+	background: #eeeeee;
+}
+.breadcrumb a {
+	color: #377EFF;
+}
+.breadcrumb a:hover {
+	color: #0D306F;
+}
+.box-left .box-product-left .name a:hover {
+	color: #377EFF;
+}
+.box-product .name a:hover {
+	color: #377EFF;
+}
+.box-product .price {
+	color: #377EFF;
+}
+.box-category > ul > li > a:hover {
+	color: #377EFF;
+}
+.product-compare a {
+	color: #377EFF;
+}
+.product-compare a:hover {
+	color: #0D306F;
+}
+.product-list .name a:hover {
+	color:#377EFF;
+}
+.product-grid .name a:hover {
+	color: #377EFF;
+}
+.product-grid .price {
+	color: #377EFF;
+}
+.product-grid .wishlist a:hover {
+	color: #377EFF;
+}
+.product-list .compare a:hover, .product-list .wishlist a:hover {
+	color: #377EFF;
+}
+.product-grid .compare a:hover {
+	color: #377EFF;
+}
+.product-info .description a {
+	color: #377EFF;
+}
+.product-info .description a:hover {
+	color: #0D306F;
+}
+.product-info .review > div > span {
+	color: #377EFF;
+}
+#powered a{
+	color: #377EFF;
+}
+#powered a:visited{
+	color: #377EFF;
+}
+#powered a:hover{
+	color: #0D306F;
+}
+#twitter li span a {
+    color: #377EFF;
+}
+
+#twitter li span a:hover {
+    color: #0D306F;
+}

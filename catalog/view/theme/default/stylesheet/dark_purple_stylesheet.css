@@ -1,0 +1,119 @@
+a:hover {
+	color: #8000FF;
+	text-decoration: none;
+}
+body {
+	background: url('../image/footer-dark-purple.png') repeat-x scroll 0 bottom #130323;
+}
+
+#wrapper {
+	background: url('../image/glass-dark-purple.jpg') no-repeat scroll center 0 #130323;
+}
+
+#main-menu .menu-left {
+	background: url('../image/menu-flip-dark-purple.png') no-repeat scroll 0 0 transparent;
+}   
+
+#main-menu .menu-middle {
+    background: url('../image/menu-flip-dark-purple.png') repeat-x scroll 0 -57px transparent;
+}
+
+#main-menu .menu-right {
+    background: url('../image/menu-flip-dark-purple.png') no-repeat scroll 0 -114px transparent;
+}
+#main-menu .menu a:hover {
+background: url('../image/menu-flip-dark-purple.png') 0 -171px repeat-x;
+}
+#currency a:hover {
+	color: #8000FF;
+}
+#currency a b {
+	color: #8000FF;
+	text-decoration: none;
+}
+#header #cart .heading a:hover {
+	color: #8000FF;
+}
+#header #welcome a {
+	color: #8000FF;
+}
+#header .links a:hover {
+	color: #8000FF;
+}
+#menu > ul > li:hover {
+	background: url('../image/menu-flip-dark-purple.png') 0 -171px repeat-x;
+}
+#menu > ul > li > div {
+	border: 1px solid #05010a;
+	background: #130323;
+}
+#menu > ul > li ul > li > a:hover {
+	background: #1f0538;
+}
+.breadcrumb a {
+	color: #8000FF;
+}
+.breadcrumb a:hover {
+	color: #130323;
+}
+.box-left .box-product-left .name a:hover {
+	color: #8000FF;
+}
+.box-product .name a:hover {
+	color: #8000FF;
+}
+.box-product .price {
+	color: #8000FF;
+}
+.box-category > ul > li > a:hover {
+	color: #8000FF;
+}
+.product-compare a {
+	color: #8000FF;
+}
+.product-compare a:hover {
+	color: #130323;
+}
+.product-list .name a:hover {
+	color:#8000FF;
+}
+.product-grid .name a:hover {
+	color: #8000FF;
+}
+.product-grid .price {
+	color: #8000FF;
+}
+.product-grid .wishlist a:hover {
+	color: #8000FF;
+}
+.product-list .compare a:hover, .product-list .wishlist a:hover {
+	color: #8000FF;
+}
+.product-grid .compare a:hover {
+	color: #8000FF;
+}
+.product-info .description a {
+	color: #8000FF;
+}
+.product-info .description a:hover {
+	color: #130323;
+}
+.product-info .review > div > span {
+	color: #8000FF;
+}
+#powered a{
+	color: #8000FF;
+}
+#powered a:visited{
+	color: #8000FF;
+}
+#powered a:hover{
+	color: #130323;
+}
+#twitter li span a {
+    color: #8000FF;
+}
+
+#twitter li span a:hover {
+    color: #130323;
+}

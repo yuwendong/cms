@@ -1,0 +1,34 @@
+<?php
+// Heading
+$_['heading_title']       = '幻灯片';
+
+// Text
+$_['text_module']          = '模块管理';
+$_['text_success']         = '成功：您已修改幻灯片模块！';
+$_['text_content_top']     = '内容的上面';
+$_['text_content_bottom']  = '内容的底部';
+$_['text_column_left']     = '左列显示';
+$_['text_column_right']    = '右列显示';
+$_['text_pleaseselect']     = 'Please select';
+$_['text_pause']      = 'Pause on Mouse Over: ';
+
+
+// Entry
+$_['entry_banner']         = '横幅广告：';
+$_['entry_dimension']      = '尺寸大小 (W x H)：';
+$_['entry_layout']         = '布局：';
+$_['entry_position']       = '显示位置：';
+$_['entry_status']         = '状态：';
+$_['entry_sort_order']     = '排序：';
+$_['entry_delay']      = 'Pause Between Transitions (ms): ';
+$_['entry_speed']      = 'Animation Speed of Transition (ms):';
+$_['entry_pause']      = 'Pause on Mouse Over: ';
+$_['entry_effect']      = 'Slide Effect: ';
+$_['entry_slices']      = 'Slices: <br /><span class="help">For slice animations.</span>';
+$_['entry_boxcolumns']   = 'Number of box Columns: <br /><span class="help">For box animations.</span>';
+$_['entry_boxrows']      = 'Number of box Rows: <br /><span class="help">For box animations.</span>';
+
+// Error
+$_['error_permission']     = '警告：您没有权限修改幻灯片模块！';
+$_['error_dimension']      = '宽度&amp; 高度必填！';
+?>

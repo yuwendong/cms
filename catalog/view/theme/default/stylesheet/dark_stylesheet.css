@@ -1,0 +1,119 @@
+a:hover {
+	color: #377EFF;
+	text-decoration: none;
+}
+body {
+	background: url('../image/footer-dark.png') repeat-x scroll 0 bottom #383838;
+}
+
+#wrapper {
+	background: url('../image/glass-dark.jpg') no-repeat scroll center 0 #383838;
+}
+
+#main-menu .menu-left {
+	background: url('../image/menu-flip-dark.png') no-repeat scroll 0 0 transparent;
+}   
+
+#main-menu .menu-middle {
+    background: url('../image/menu-flip-dark.png') repeat-x scroll 0 -57px transparent;
+}
+
+#main-menu .menu-right {
+    background: url('../image/menu-flip-dark.png') no-repeat scroll 0 -114px transparent;
+}
+#main-menu .menu a:hover {
+background: url('../image/menu-flip-dark.png') 0 -171px repeat-x;
+}
+#currency a:hover {
+	color: #377EFF;
+}
+#currency a b {
+	color: #377EFF;
+	text-decoration: none;
+}
+#header #cart .heading a:hover {
+	color: #377EFF;
+}
+#header #welcome a {
+	color: #377EFF;
+}
+#header .links a:hover {
+	color: #377EFF;
+}
+#menu > ul > li:hover {
+	background: url('../image/menu-flip-dark.png') 0 -171px repeat-x;
+}
+#menu > ul > li > div {
+	border: 1px solid #000000;
+	background: #282828;
+}
+#menu > ul > li ul > li > a:hover {
+	background: #313131;
+}
+.breadcrumb a {
+	color: #377EFF;
+}
+.breadcrumb a:hover {
+	color: #383838;
+}
+.box-left .box-product-left .name a:hover {
+	color: #377EFF;
+}
+.box-product .name a:hover {
+	color: #377EFF;
+}
+.box-product .price {
+	color: #377EFF;
+}
+.box-category > ul > li > a:hover {
+	color: #377EFF;
+}
+.product-compare a {
+	color: #377EFF;
+}
+.product-compare a:hover {
+	color: #383838;
+}
+.product-list .name a:hover {
+	color:#377EFF;
+}
+.product-grid .name a:hover {
+	color: #377EFF;
+}
+.product-grid .price {
+	color: #377EFF;
+}
+.product-grid .wishlist a:hover {
+	color: #377EFF;
+}
+.product-list .compare a:hover, .product-list .wishlist a:hover {
+	color: #377EFF;
+}
+.product-grid .compare a:hover {
+	color: #377EFF;
+}
+.product-info .description a {
+	color: #377EFF;
+}
+.product-info .description a:hover {
+	color: #383838;
+}
+.product-info .review > div > span {
+	color: #377EFF;
+}
+#powered a{
+	color: #377EFF;
+}
+#powered a:visited{
+	color: #377EFF;
+}
+#powered a:hover{
+	color: #383838;
+}
+#twitter li span a {
+    color: #377EFF;
+}
+
+#twitter li span a:hover {
+    color: #383838;
+}

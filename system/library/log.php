@@ -1,0 +1,21 @@
+<?php
+class Log {
+	private $filename;
+	
+	public function __construct($filename) {
+		$this->filename = $filename;
+	}
+	
+	public function write($message) {
+		$file = DIR_LOGS . $this->filename;
+		
+		$handle = fopen($file, 'a+'); 
+		
+		if(stripos($message,"Notice")>0||stripos($message,"Warning")>0){
+		}else{
+		fwrite($handle, date('Y-m-d G:i:s') . ' - ' . print_r($message, true)  . "\n");
+		}
+		fclose($handle); 
+	}
+}
+?>
