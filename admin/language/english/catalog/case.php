@@ -114,13 +114,13 @@ $_['entry_status']               = '&nbsp;&nbsp;案例状态：';
 $_['entry_sort_order']           = '&nbsp;&nbsp;选项排序：';
 
 $_['entry_abstract']             = '&nbsp;&nbsp;案例摘要：';
-$_['entry_citylist']             = '&nbsp;&nbsp;热点转发城市列表：';
-$_['entry_keywordlist']          = '&nbsp;&nbsp;关键词列表：';
+$_['entry_citylist']             = '&nbsp;&nbsp;热点转发城市：';
+$_['entry_keywordlist']          = '&nbsp;&nbsp;关键词：';
 $_['entry_news']                 = '&nbsp;&nbsp;中性：';
 $_['entry_happy']                = '&nbsp;&nbsp;高兴：';
 $_['entry_sad']                  = '&nbsp;&nbsp;悲伤：';
 $_['entry_angry']                = '&nbsp;&nbsp;愤怒：';
-$_['entry_pie']                  = '&nbsp;&nbsp;情绪占比：';
+$_['entry_pie']                  = '&nbsp;&nbsp;各情绪占比：';
 $_['entry_pointlist']            = '&nbsp;&nbsp;情绪拐点：';
 
 

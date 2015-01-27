@@ -47,6 +47,21 @@
               <td><input type="text" name="abstract" value="<?php echo $abstract; ?>" size="100px"/></td>
             </tr>
             <tr>
+              <td><?php echo $entry_keywordlist; ?></td>
+              <td><input type="text" name="keyword" value="<?php echo $keyword; ?>" size="100px"/></td>
+            </tr>
+            <tr>
+              <td><?php echo $entry_pie; ?></td>
+              <td><?php echo $entry_news; ?>
+              <input type="text" name="news_percent" value="<?php echo sprintf("%s",$news_percent*1); ?>" size="5px"/>
+              <?php echo $entry_happy; ?>
+              <input type="text" name="happy_percent" value="<?php echo sprintf("%s",$happy_percent*1); ?>" size="5px"/>
+              <?php echo $entry_angry; ?>
+              <input type="text" name="angry_percent" value="<?php echo sprintf("%s",$angry_percent*1); ?>" size="5px"/>
+              <?php echo $entry_sad; ?>
+              <input type="text" name="sad_percent" value="<?php echo sprintf("%s",$sad_percent*1); ?>" size="5px"/></td>
+            </tr>
+            <tr>
               <td><?php echo $entry_pointlist; ?></td>
               <td><?php echo $entry_point1; ?>&nbsp;&nbsp;
               <input type="text" name="point1" value="<?php echo sprintf("%s",$point1*1); ?>" size="5px"/>
@@ -70,27 +85,12 @@
               <input type="text" name="point10" value="<?php echo sprintf("%s",$point10*1); ?>" size="5px"/></td>
             </tr>
             <tr>
-              <td><?php echo $entry_keywordlist; ?></td>
-              <td><input type="text" name="keyword" value="<?php echo $keyword; ?>" size="100px"/></td>
-            </tr>
-            <tr>
-              <td><?php echo $entry_pie; ?></td>
-              <td><?php echo $entry_news; ?>
-              <input type="text" name="news_percent" value="<?php echo sprintf("%s",$news_percent*1); ?>" size="5px"/>
-              <?php echo $entry_happy; ?>
-              <input type="text" name="happy_percent" value="<?php echo sprintf("%s",$happy_percent*1); ?>" size="5px"/>
-              <?php echo $entry_angry; ?>
-              <input type="text" name="angry_percent" value="<?php echo sprintf("%s",$angry_percent*1); ?>" size="5px"/>
-              <?php echo $entry_sad; ?>
-              <input type="text" name="sad_percent" value="<?php echo sprintf("%s",$sad_percent*1); ?>" size="5px"/></td>
-            </tr>
-            <tr>
               <td><?php echo $entry_citylist; ?></td>
               <td><?php echo $entry_city1; ?>&nbsp;&nbsp;
               <input type="text" name="city1" value="<?php echo $city1; ?>" size="5px"/>
               <?php echo $entry_city2; ?>&nbsp;&nbsp;
               <input type="text" name="city2" value="<?php echo $city2; ?>" size="5px"/>
-              <?php echo $entry_city3; ?>&nbsp;&nbsp;
+              <?php echo $entry_city3; ?>&nbsp;&nbsp;&nbsp;
               <input type="text" name="city3" value="<?php echo $city3; ?>" size="5px"/>
               <?php echo $entry_city4; ?>&nbsp;&nbsp;
               <input type="text" name="city4" value="<?php echo $city4; ?>" size="5px"/>
@@ -100,7 +100,7 @@
               <input type="text" name="city6" value="<?php echo $city6; ?>" size="5px"/>
               <?php echo $entry_city7; ?>&nbsp;&nbsp;
               <input type="text" name="city7" value="<?php echo $city7; ?>" size="5px"/>
-              <?php echo $entry_city8; ?>&nbsp;&nbsp;
+              <?php echo $entry_city8; ?>&nbsp;&nbsp;&nbsp;
               <input type="text" name="city8" value="<?php echo $city8; ?>" size="5px"/>
               <?php echo $entry_city9; ?>&nbsp;&nbsp;
               <input type="text" name="city9" value="<?php echo $city9; ?>" size="5px"/>

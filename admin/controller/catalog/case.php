@@ -81,10 +81,8 @@ class ControllerCatalogCase extends Controller {
 		$this->document->setTitle($this->language->get('heading_title'));
 
 		$this->load->model('catalog/case');
-		print_r($this->request->post);
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateForm()) {
 			$this->model_catalog_case->editCase($this->request->get['case_id'], $this->request->post);
-			echo '12334'.$this->request->post;
 			$this->openbay->caseUpdateListen($this->request->get['case_id'], $this->request->post);			
 			$this->session->data['success'] = $this->language->get('text_success');
 
@@ -1098,7 +1096,7 @@ class ControllerCatalogCase extends Controller {
 		if (isset($this->request->post['city16'])) {
 			$this->data['city16'] = $this->request->post['city16'];
 		} elseif (!empty($case_info)) {
-			$this->data['city16'] = $case_info['city6'];
+			$this->data['city16'] = $case_info['city16'];
 		} else {
 			$this->data['city16'] = '';
 		}
@@ -1106,7 +1104,7 @@ class ControllerCatalogCase extends Controller {
 		if (isset($this->request->post['city17'])) {
 			$this->data['city17'] = $this->request->post['city17'];
 		} elseif (!empty($case_info)) {
-			$this->data['city17'] = $case_info['city7'];
+			$this->data['city17'] = $case_info['city17'];
 		} else {
 			$this->data['city17'] = '';
 		}
