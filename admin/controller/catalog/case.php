@@ -81,10 +81,10 @@ class ControllerCatalogCase extends Controller {
 		$this->document->setTitle($this->language->get('heading_title'));
 
 		$this->load->model('catalog/case');
-
+		print_r($this->request->post);
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateForm()) {
 			$this->model_catalog_case->editCase($this->request->get['case_id'], $this->request->post);
-
+			echo '12334'.$this->request->post;
 			$this->openbay->caseUpdateListen($this->request->get['case_id'], $this->request->post);			
 			$this->session->data['success'] = $this->language->get('text_success');
 
@@ -666,6 +666,39 @@ class ControllerCatalogCase extends Controller {
 		$this->data['entry_keyword'] = $this->language->get('entry_keyword');
 		$this->data['entry_model'] = $this->language->get('entry_model');
 		$this->data['entry_sku'] = $this->language->get('entry_sku');
+
+		$this->data['entry_point1'] = $this->language->get('entry_point1');
+		$this->data['entry_point2'] = $this->language->get('entry_point2');
+		$this->data['entry_point3'] = $this->language->get('entry_point3');
+		$this->data['entry_point4'] = $this->language->get('entry_point4');
+		$this->data['entry_point5'] = $this->language->get('entry_point5');
+		$this->data['entry_point6'] = $this->language->get('entry_point6');
+		$this->data['entry_point7'] = $this->language->get('entry_point7');
+		$this->data['entry_point8'] = $this->language->get('entry_point8');
+		$this->data['entry_point9'] = $this->language->get('entry_point9');
+		$this->data['entry_point10'] = $this->language->get('entry_point10');
+		$this->data['entry_city1'] = $this->language->get('entry_city1');
+		$this->data['entry_city2'] = $this->language->get('entry_city2');
+		$this->data['entry_city3'] = $this->language->get('entry_city3');
+		$this->data['entry_city4'] = $this->language->get('entry_city4');
+		$this->data['entry_city5'] = $this->language->get('entry_city5');
+		$this->data['entry_city6'] = $this->language->get('entry_city6');
+		$this->data['entry_city7'] = $this->language->get('entry_city7');
+		$this->data['entry_city8'] = $this->language->get('entry_city8');
+		$this->data['entry_city9'] = $this->language->get('entry_city9');
+		$this->data['entry_city10'] = $this->language->get('entry_city10');
+		$this->data['entry_city11'] = $this->language->get('entry_city11');
+		$this->data['entry_city12'] = $this->language->get('entry_city12');
+		$this->data['entry_city13'] = $this->language->get('entry_city13');
+		$this->data['entry_city14'] = $this->language->get('entry_city14');
+		$this->data['entry_city15'] = $this->language->get('entry_city15');
+		$this->data['entry_city16'] = $this->language->get('entry_city16');
+		$this->data['entry_city17'] = $this->language->get('entry_city17');
+		$this->data['entry_city18'] = $this->language->get('entry_city18');
+		$this->data['entry_city19'] = $this->language->get('entry_city19');
+		$this->data['entry_city20'] = $this->language->get('entry_city20');
+
+
 		$this->data['entry_upc'] = $this->language->get('entry_upc');
 		$this->data['entry_ean'] = $this->language->get('entry_ean');
 		$this->data['entry_jan'] = $this->language->get('entry_jan');
@@ -693,6 +726,20 @@ class ControllerCatalogCase extends Controller {
 		$this->data['entry_image'] = $this->language->get('entry_image');
 		$this->data['entry_download'] = $this->language->get('entry_download');
 		$this->data['entry_category'] = $this->language->get('entry_category');
+
+	    $this->data['entry_abstract'] = $this->language->get('entry_abstract');
+	    $this->data['entry_citylist'] = $this->language->get('entry_citylist');
+	    $this->data['entry_sad'] = $this->language->get('entry_sad');
+	    $this->data['entry_happy'] = $this->language->get('entry_happy');
+	    $this->data['entry_angry'] = $this->language->get('entry_angry');
+	    $this->data['entry_news'] = $this->language->get('entry_news');
+	    $this->data['entry_pie'] = $this->language->get('entry_pie');
+	    $this->data['entry_keywordlist'] = $this->language->get('entry_keywordlist');
+	    $this->data['entry_pointlist'] = $this->language->get('entry_pointlist');
+
+
+
+
 		$this->data['entry_filter'] = $this->language->get('entry_filter');
 		$this->data['entry_related'] = $this->language->get('entry_related');
 		$this->data['entry_tagrelated'] = $this->language->get('entry_tagrelated');
@@ -921,6 +968,290 @@ class ControllerCatalogCase extends Controller {
 			$this->data['model'] = $case_info['model'];
 		} else {
 			$this->data['model'] = '';
+		}
+
+		if (isset($this->request->post['abstract'])) {
+			$this->data['abstract'] = $this->request->post['abstract'];
+		} elseif (!empty($case_info)) {
+			$this->data['abstract'] = $case_info['abstract'];
+		} else {
+			$this->data['abstract'] = '';
+		}
+
+		if (isset($this->request->post['city1'])) {
+			$this->data['city1'] = $this->request->post['city1'];
+		} elseif (!empty($case_info)) {
+			$this->data['city1'] = $case_info['city1'];
+		} else {
+			$this->data['city1'] = '';
+		}
+
+		if (isset($this->request->post['city2'])) {
+			$this->data['city2'] = $this->request->post['city2'];
+		} elseif (!empty($case_info)) {
+			$this->data['city2'] = $case_info['city2'];
+		} else {
+			$this->data['city2'] = '';
+		}
+
+		if (isset($this->request->post['city3'])) {
+			$this->data['city3'] = $this->request->post['city3'];
+		} elseif (!empty($case_info)) {
+			$this->data['city3'] = $case_info['city3'];
+		} else {
+			$this->data['city3'] = '';
+		}
+
+		if (isset($this->request->post['city4'])) {
+			$this->data['city4'] = $this->request->post['city4'];
+		} elseif (!empty($case_info)) {
+			$this->data['city4'] = $case_info['city4'];
+		} else {
+			$this->data['city4'] = '';
+		}
+		if (isset($this->request->post['city5'])) {
+			$this->data['city5'] = $this->request->post['city5'];
+		} elseif (!empty($case_info)) {
+			$this->data['city5'] = $case_info['city5'];
+		} else {
+			$this->data['city5'] = '';
+		}
+
+		if (isset($this->request->post['city6'])) {
+			$this->data['city6'] = $this->request->post['city6'];
+		} elseif (!empty($case_info)) {
+			$this->data['city6'] = $case_info['city6'];
+		} else {
+			$this->data['city6'] = '';
+		}
+
+		if (isset($this->request->post['city7'])) {
+			$this->data['city7'] = $this->request->post['city7'];
+		} elseif (!empty($case_info)) {
+			$this->data['city7'] = $case_info['city7'];
+		} else {
+			$this->data['city7'] = '';
+		}
+
+		if (isset($this->request->post['city8'])) {
+			$this->data['city8'] = $this->request->post['city8'];
+		} elseif (!empty($case_info)) {
+			$this->data['city8'] = $case_info['city8'];
+		} else {
+			$this->data['city8'] = '';
+		}
+
+		if (isset($this->request->post['city9'])) {
+			$this->data['city9'] = $this->request->post['city9'];
+		} elseif (!empty($case_info)) {
+			$this->data['city9'] = $case_info['city9'];
+		} else {
+			$this->data['city9'] = '';
+		}
+
+		if (isset($this->request->post['city10'])) {
+			$this->data['city10'] = $this->request->post['city10'];
+		} elseif (!empty($case_info)) {
+			$this->data['city10'] = $case_info['city10'];
+		} else {
+			$this->data['city10'] = '';
+		}
+		if (isset($this->request->post['city11'])) {
+			$this->data['city11'] = $this->request->post['city11'];
+		} elseif (!empty($case_info)) {
+			$this->data['city11'] = $case_info['city11'];
+		} else {
+			$this->data['city11'] = '';
+		}
+
+		if (isset($this->request->post['city12'])) {
+			$this->data['city12'] = $this->request->post['city12'];
+		} elseif (!empty($case_info)) {
+			$this->data['city12'] = $case_info['city12'];
+		} else {
+			$this->data['city12'] = '';
+		}
+
+		if (isset($this->request->post['city13'])) {
+			$this->data['city13'] = $this->request->post['city13'];
+		} elseif (!empty($case_info)) {
+			$this->data['city13'] = $case_info['city13'];
+		} else {
+			$this->data['city13'] = '';
+		}
+
+		if (isset($this->request->post['city14'])) {
+			$this->data['city14'] = $this->request->post['city14'];
+		} elseif (!empty($case_info)) {
+			$this->data['city14'] = $case_info['city14'];
+		} else {
+			$this->data['city14'] = '';
+		}
+		if (isset($this->request->post['city15'])) {
+			$this->data['city15'] = $this->request->post['city15'];
+		} elseif (!empty($case_info)) {
+			$this->data['city15'] = $case_info['city15'];
+		} else {
+			$this->data['city15'] = '';
+		}
+
+		if (isset($this->request->post['city16'])) {
+			$this->data['city16'] = $this->request->post['city16'];
+		} elseif (!empty($case_info)) {
+			$this->data['city16'] = $case_info['city6'];
+		} else {
+			$this->data['city16'] = '';
+		}
+
+		if (isset($this->request->post['city17'])) {
+			$this->data['city17'] = $this->request->post['city17'];
+		} elseif (!empty($case_info)) {
+			$this->data['city17'] = $case_info['city7'];
+		} else {
+			$this->data['city17'] = '';
+		}
+
+		if (isset($this->request->post['city18'])) {
+			$this->data['city18'] = $this->request->post['city18'];
+		} elseif (!empty($case_info)) {
+			$this->data['city18'] = $case_info['city18'];
+		} else {
+			$this->data['city18'] = '';
+		}
+
+		if (isset($this->request->post['city19'])) {
+			$this->data['city19'] = $this->request->post['city19'];
+		} elseif (!empty($case_info)) {
+			$this->data['city19'] = $case_info['city19'];
+		} else {
+			$this->data['city19'] = '';
+		}
+
+		if (isset($this->request->post['city20'])) {
+			$this->data['city20'] = $this->request->post['city20'];
+		} elseif (!empty($case_info)) {
+			$this->data['city20'] = $case_info['city20'];
+		} else {
+			$this->data['city20'] = '';
+		}
+
+		if (isset($this->request->post['news_percent'])) {
+			$this->data['news_percent'] = $this->request->post['news_percent'];
+		} elseif (!empty($case_info)) {
+			$this->data['news_percent'] = $case_info['news_percent'];
+		} else {
+			$this->data['news_percent'] = '';
+		}
+
+		if (isset($this->request->post['sad_percent'])) {
+			$this->data['sad_percent'] = $this->request->post['sad_percent'];
+		} elseif (!empty($case_info)) {
+			$this->data['sad_percent'] = $case_info['sad_percent'];
+		} else {
+			$this->data['sad_percent'] = '';
+		}
+
+		if (isset($this->request->post['happy_percent'])) {
+			$this->data['happy_percent'] = $this->request->post['happy_percent'];
+		} elseif (!empty($case_info)) {
+			$this->data['happy_percent'] = $case_info['happy_percent'];
+		} else {
+			$this->data['happy_percent'] = '';
+		}
+
+		if (isset($this->request->post['angry_percent'])) {
+			$this->data['angry_percent'] = $this->request->post['angry_percent'];
+		} elseif (!empty($case_info)) {
+			$this->data['angry_percent'] = $case_info['angry_percent'];
+		} else {
+			$this->data['angry_percent'] = '';
+		}
+
+		if (isset($this->request->post['point1'])) {
+			$this->data['point1'] = $this->request->post['point1'];
+		} elseif (!empty($case_info)) {
+			$this->data['point1'] = $case_info['point1'];
+		} else {
+			$this->data['point1'] = '';
+		}
+
+		if (isset($this->request->post['point2'])) {
+			$this->data['point2'] = $this->request->post['point2'];
+		} elseif (!empty($case_info)) {
+			$this->data['point2'] = $case_info['point2'];
+		} else {
+			$this->data['point2'] = '';
+		}
+
+		if (isset($this->request->post['point3'])) {
+			$this->data['point3'] = $this->request->post['point3'];
+		} elseif (!empty($case_info)) {
+			$this->data['point3'] = $case_info['point3'];
+		} else {
+			$this->data['point3'] = '';
+		}
+
+		if (isset($this->request->post['point4'])) {
+			$this->data['point4'] = $this->request->post['point4'];
+		} elseif (!empty($case_info)) {
+			$this->data['point4'] = $case_info['point4'];
+		} else {
+			$this->data['point4'] = '';
+		}
+		if (isset($this->request->post['point5'])) {
+			$this->data['point5'] = $this->request->post['point5'];
+		} elseif (!empty($case_info)) {
+			$this->data['point5'] = $case_info['point5'];
+		} else {
+			$this->data['point5'] = '';
+		}
+
+		if (isset($this->request->post['point6'])) {
+			$this->data['point6'] = $this->request->post['point6'];
+		} elseif (!empty($case_info)) {
+			$this->data['point6'] = $case_info['point6'];
+		} else {
+			$this->data['point6'] = '';
+		}
+
+		if (isset($this->request->post['point7'])) {
+			$this->data['point7'] = $this->request->post['point7'];
+		} elseif (!empty($case_info)) {
+			$this->data['point7'] = $case_info['point7'];
+		} else {
+			$this->data['point7'] = '';
+		}
+
+		if (isset($this->request->post['point8'])) {
+			$this->data['point8'] = $this->request->post['point8'];
+		} elseif (!empty($case_info)) {
+			$this->data['point8'] = $case_info['point8'];
+		} else {
+			$this->data['point8'] = '';
+		}
+
+		if (isset($this->request->post['point9'])) {
+			$this->data['point9'] = $this->request->post['point9'];
+		} elseif (!empty($case_info)) {
+			$this->data['point9'] = $case_info['point9'];
+		} else {
+			$this->data['point9'] = '';
+		}
+
+		if (isset($this->request->post['point10'])) {
+			$this->data['point10'] = $this->request->post['point10'];
+		} elseif (!empty($case_info)) {
+			$this->data['point10'] = $case_info['point10'];
+		} else {
+			$this->data['point10'] = '';
+		}
+
+		if (isset($this->request->post['keyword'])) {
+			$this->data['keyword'] = $this->request->post['keyword'];
+		} elseif (!empty($case_info)) {
+			$this->data['keyword'] = $case_info['keyword'];
+		} else {
+			$this->data['keyword'] = '';
 		}
 
 		if (isset($this->request->post['sku'])) {

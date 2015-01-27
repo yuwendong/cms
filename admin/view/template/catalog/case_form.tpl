@@ -35,14 +35,98 @@
 					  <input type="hidden" name="stock_status_id" value='1'/>
 					  <input type="hidden" name="quantity" value='100'/>
 				</tr>     
-              <tr>
-                <td><span class="required">*</span> <?php echo $entry_name; ?></td>
-                <td><input type="text" name="case_description[<?php echo $language['language_id']; ?>][name]" size="100" value="<?php echo isset($case_description[$language['language_id']]) ? $case_description[$language['language_id']]['name'] : ''; ?>" />
-                  <?php if (isset($error_name[$language['language_id']])) { ?>
-                  <span class="error"><?php echo $error_name[$language['language_id']]; ?></span>
-                  <?php } ?></td>
-              </tr> 
-
+            <tr>
+              <td><span class="required">*</span> <?php echo $entry_name; ?></td>
+              <td><input type="text" name="case_description[<?php echo $language['language_id']; ?>][name]" size="100" value="<?php echo isset($case_description[$language['language_id']]) ? $case_description[$language['language_id']]['name'] : ''; ?>" />
+                <?php if (isset($error_name[$language['language_id']])) { ?>
+                <span class="error"><?php echo $error_name[$language['language_id']]; ?></span>
+                <?php } ?></td>
+            </tr> 
+            <tr>
+              <td><?php echo $entry_abstract; ?></td>
+              <td><input type="text" name="abstract" value="<?php echo $abstract; ?>" size="100px"/></td>
+            </tr>
+            <tr>
+              <td><?php echo $entry_pointlist; ?></td>
+              <td><?php echo $entry_point1; ?>&nbsp;&nbsp;
+              <input type="text" name="point1" value="<?php echo sprintf("%s",$point1*1); ?>" size="5px"/>
+              <?php echo $entry_point2; ?>&nbsp;&nbsp;
+              <input type="text" name="point2" value="<?php echo sprintf("%s",$point2*1); ?>" size="5px"/>
+              <?php echo $entry_point3; ?>&nbsp;&nbsp;
+              <input type="text" name="point3" value="<?php echo sprintf("%s",$point3*1); ?>" size="5px"/>
+              <?php echo $entry_point4; ?>&nbsp;&nbsp;
+              <input type="text" name="point4" value="<?php echo sprintf("%s",$point4*1); ?>" size="5px"/>
+              <?php echo $entry_point5; ?>&nbsp;&nbsp;
+              <input type="text" name="point5" value="<?php echo sprintf("%s",$point5*1); ?>" size="5px"/><br />
+              <?php echo $entry_point6; ?>&nbsp;&nbsp;
+              <input type="text" name="point6" value="<?php echo sprintf("%s",$point6*1); ?>" size="5px"/>
+              <?php echo $entry_point7; ?>&nbsp;&nbsp;
+              <input type="text" name="point7" value="<?php echo sprintf("%s",$point7*1); ?>" size="5px"/>
+              <?php echo $entry_point8; ?>&nbsp;&nbsp;
+              <input type="text" name="point8" value="<?php echo sprintf("%s",$point8*1); ?>" size="5px"/>
+              <?php echo $entry_point9; ?>&nbsp;&nbsp;
+              <input type="text" name="point9" value="<?php echo sprintf("%s",$point9*1); ?>" size="5px"/>
+              <?php echo $entry_point10; ?>
+              <input type="text" name="point10" value="<?php echo sprintf("%s",$point10*1); ?>" size="5px"/></td>
+            </tr>
+            <tr>
+              <td><?php echo $entry_keywordlist; ?></td>
+              <td><input type="text" name="keyword" value="<?php echo $keyword; ?>" size="100px"/></td>
+            </tr>
+            <tr>
+              <td><?php echo $entry_pie; ?></td>
+              <td><?php echo $entry_news; ?>
+              <input type="text" name="news_percent" value="<?php echo sprintf("%s",$news_percent*1); ?>" size="5px"/>
+              <?php echo $entry_happy; ?>
+              <input type="text" name="happy_percent" value="<?php echo sprintf("%s",$happy_percent*1); ?>" size="5px"/>
+              <?php echo $entry_angry; ?>
+              <input type="text" name="angry_percent" value="<?php echo sprintf("%s",$angry_percent*1); ?>" size="5px"/>
+              <?php echo $entry_sad; ?>
+              <input type="text" name="sad_percent" value="<?php echo sprintf("%s",$sad_percent*1); ?>" size="5px"/></td>
+            </tr>
+            <tr>
+              <td><?php echo $entry_citylist; ?></td>
+              <td><?php echo $entry_city1; ?>&nbsp;&nbsp;
+              <input type="text" name="city1" value="<?php echo $city1; ?>" size="5px"/>
+              <?php echo $entry_city2; ?>&nbsp;&nbsp;
+              <input type="text" name="city2" value="<?php echo $city2; ?>" size="5px"/>
+              <?php echo $entry_city3; ?>&nbsp;&nbsp;
+              <input type="text" name="city3" value="<?php echo $city3; ?>" size="5px"/>
+              <?php echo $entry_city4; ?>&nbsp;&nbsp;
+              <input type="text" name="city4" value="<?php echo $city4; ?>" size="5px"/>
+              <?php echo $entry_city5; ?>&nbsp;&nbsp;
+              <input type="text" name="city5" value="<?php echo $city5; ?>" size="5px"/><br />
+              <?php echo $entry_city6; ?>&nbsp;&nbsp;
+              <input type="text" name="city6" value="<?php echo $city6; ?>" size="5px"/>
+              <?php echo $entry_city7; ?>&nbsp;&nbsp;
+              <input type="text" name="city7" value="<?php echo $city7; ?>" size="5px"/>
+              <?php echo $entry_city8; ?>&nbsp;&nbsp;
+              <input type="text" name="city8" value="<?php echo $city8; ?>" size="5px"/>
+              <?php echo $entry_city9; ?>&nbsp;&nbsp;
+              <input type="text" name="city9" value="<?php echo $city9; ?>" size="5px"/>
+              <?php echo $entry_city10; ?>
+              <input type="text" name="city10" value="<?php echo $city10; ?>" size="5px"/><br />
+              <?php echo $entry_city11; ?>
+              <input type="text" name="city11" value="<?php echo $city11; ?>" size="5px"/>
+              <?php echo $entry_city12; ?>
+              <input type="text" name="city12" value="<?php echo $city12; ?>" size="5px"/>
+              <?php echo $entry_city13; ?>
+              <input type="text" name="city13" value="<?php echo $city13; ?>" size="5px"/>
+              <?php echo $entry_city14; ?>
+              <input type="text" name="city14" value="<?php echo $city14; ?>" size="5px"/>
+              <?php echo $entry_city15; ?>
+              <input type="text" name="city15" value="<?php echo $city15; ?>" size="5px"/><br />
+              <?php echo $entry_city16; ?>
+              <input type="text" name="city16" value="<?php echo $city16; ?>" size="5px"/>
+              <?php echo $entry_city17; ?>
+              <input type="text" name="city17" value="<?php echo $city17; ?>" size="5px"/>
+              <?php echo $entry_city18; ?>
+              <input type="text" name="city18" value="<?php echo $city18; ?>" size="5px"/>
+              <?php echo $entry_city19; ?>
+              <input type="text" name="city19" value="<?php echo $city19; ?>" size="5px"/>
+              <?php echo $entry_city20; ?>
+              <input type="text" name="city20" value="<?php echo $city20; ?>" size="5px"/></td>
+            </tr>
             <tr>
               <td><?php echo $entry_category; ?></td>
               <td><input type="text" name="category" value="" /></td>

@@ -1,7 +1,7 @@
 <?php
 class ModelCatalogCase extends Model {
 	public function addCase($data) {
-		$this->db->query("INSERT INTO " . DB_PREFIX . "`case` SET model = '" . $this->db->escape($data['model']) . "', sku = '" . $this->db->escape($data['sku']) . "', upc = '" . $this->db->escape($data['upc']) . "', ean = '" . $this->db->escape($data['ean']) . "', jan = '" . $this->db->escape($data['jan']) . "', isbn = '" . $this->db->escape($data['isbn']) . "', mpn = '" . $this->db->escape($data['mpn']) . "', location = '" . $this->db->escape($data['location']) . "', quantity = '" . (int)$data['quantity'] . "', minimum = '" . (int)$data['minimum'] . "', subtract = '" . (int)$data['subtract'] . "', stock_status_id = '" . (int)$data['stock_status_id'] . "', date_available = '" . $this->db->escape($data['date_available']) . "', date_unavailable = '" . $this->db->escape($data['date_unavailable']) . "', manufacturer_id = '" . (int)$data['manufacturer_id'] . "', shipping = '" . (int)$data['shipping'] . "',  points = '" . (int)$data['points'] . "', weight = '" . (float)$data['weight'] . "', weight_class_id = '" . (int)$data['weight_class_id'] . "', length = '" . (float)$data['length'] . "', width = '" . (float)$data['width'] . "', height = '" . (float)$data['height'] . "', length_class_id = '" . (int)$data['length_class_id'] . "', status = '1', tax_class_id = '" . $this->db->escape($data['tax_class_id']) . "', sort_order = '" . (int)$data['sort_order'] . "', date_added = NOW()");
+		$this->db->query("INSERT INTO " . DB_PREFIX . "`case` SET model = '" . $this->db->escape($data['model']) . "', sku = '" . $this->db->escape($data['sku']) . "', city1 = '" . $this->db->escape($data['city1']) . "', city2 = '" . $this->db->escape($data['city2']) . "', city3 = '" . $this->db->escape($data['city3']) . "', city4 = '" . $this->db->escape($data['city4']) . "', city5 = '" . $this->db->escape($data['city5']) . "', city6 = '" . $this->db->escape($data['city6']) . "', city7 = '" . $this->db->escape($data['city7']) . "', city8 = '" . $this->db->escape($data['city8']) . "', city9 = '" . $this->db->escape($data['city9']) . "', city10 = '" . $this->db->escape($data['city10']) . "', city11 = '" . $this->db->escape($data['city11']) . "', city12 = '" . $this->db->escape($data['city12']) . "', city13 = '" . $this->db->escape($data['city13']) . "', city14 = '" . $this->db->escape($data['city14']) . "', city15 = '" . $this->db->escape($data['city15']) . "', city16 = '" . $this->db->escape($data['city16']) . "', city17 = '" . $this->db->escape($data['city17']) . "', city18 = '" . $this->db->escape($data['city18']) . "', city19 = '" . $this->db->escape($data['city19']) . "', city20 = '" . $this->db->escape($data['city20']) . "', point1 = '" . $this->db->escape($data['point1']) . "', point2 = '" . $this->db->escape($data['point2']) . "', point3 = '" . $this->db->escape($data['point3']) . "', point4 = '" . $this->db->escape($data['point4']) . "', point5 = '" . $this->db->escape($data['point5']) . "', point6 = '" . $this->db->escape($data['point6']) . "', point7 = '" . $this->db->escape($data['point7']) . "', point8 = '" . $this->db->escape($data['point8']) . "', point9 = '" . $this->db->escape($data['point9']) . "', point10 = '" . $this->db->escape($data['point10']) . "', abstract = '" . $this->db->escape($data['abstract']) . "', keyword = '" . $this->db->escape($data['keyword']) . "', news_percent = '" . $this->db->escape($data['news_percent']) . "', angry_percent = '" . $this->db->escape($data['angry_percent']) . "', sad_percent = '" . $this->db->escape($data['sad_percent']) . "', happy_percent = '" . $this->db->escape($data['happy_percent']) . "', upc = '" . $this->db->escape($data['upc']) . "', ean = '" . $this->db->escape($data['ean']) . "', jan = '" . $this->db->escape($data['jan']) . "', isbn = '" . $this->db->escape($data['isbn']) . "', mpn = '" . $this->db->escape($data['mpn']) . "', location = '" . $this->db->escape($data['location']) . "', quantity = '" . (int)$data['quantity'] . "', minimum = '" . (int)$data['minimum'] . "', subtract = '" . (int)$data['subtract'] . "', stock_status_id = '" . (int)$data['stock_status_id'] . "', date_available = '" . $this->db->escape($data['date_available']) . "', date_unavailable = '" . $this->db->escape($data['date_unavailable']) . "', manufacturer_id = '" . (int)$data['manufacturer_id'] . "', shipping = '" . (int)$data['shipping'] . "',  points = '" . (int)$data['points'] . "', weight = '" . (float)$data['weight'] . "', weight_class_id = '" . (int)$data['weight_class_id'] . "', length = '" . (float)$data['length'] . "', width = '" . (float)$data['width'] . "', height = '" . (float)$data['height'] . "', length_class_id = '" . (int)$data['length_class_id'] . "', status = '1', tax_class_id = '" . $this->db->escape($data['tax_class_id']) . "', sort_order = '" . (int)$data['sort_order'] . "', date_added = NOW()");
 
 		$case_id = $this->db->getLastId();
 
@@ -413,7 +413,7 @@ class ModelCatalogCase extends Model {
 	}
 
 	public function editCase($case_id, $data) {
-		$this->db->query("UPDATE " . DB_PREFIX . "`case` SET model = '" . $this->db->escape($data['model']) . "', sku = '" . $this->db->escape($data['sku']) . "', upc = '" . $this->db->escape($data['upc']) . "', ean = '" . $this->db->escape($data['ean']) . "', jan = '" . $this->db->escape($data['jan']) . "', isbn = '" . $this->db->escape($data['isbn']) . "', mpn = '" . $this->db->escape($data['mpn']) . "', location = '" . $this->db->escape($data['location']) . "',  minimum = '" . (int)$data['minimum'] . "', subtract = '" . (int)$data['subtract'] . "', stock_status_id = '" . (int)$data['stock_status_id'] . "', date_available = '" . $this->db->escape($data['date_available']) . "', date_unavailable = '" . $this->db->escape($data['date_unavailable']) . "', manufacturer_id = '" . (int)$data['manufacturer_id'] . "', shipping = '" . (int)$data['shipping'] . "',  points = '" . (int)$data['points'] . "', weight = '" . (float)$data['weight'] . "', weight_class_id = '" . (int)$data['weight_class_id'] . "', length = '" . (float)$data['length'] . "', width = '" . (float)$data['width'] . "', height = '" . (float)$data['height'] . "', length_class_id = '" . (int)$data['length_class_id'] . "', status = '1', tax_class_id = '" . $this->db->escape($data['tax_class_id']) . "', sort_order = '" . (int)$data['sort_order'] . "', date_modified = NOW() WHERE case_id = '" . (int)$case_id . "'");
+		$this->db->query("UPDATE " . DB_PREFIX . "`case` SET model = '" . $this->db->escape($data['model']) . "', sku = '" . $this->db->escape($data['sku']) . "',city1 = '" . $this->db->escape($data['city1']) . "',city2 = '" . $this->db->escape($data['city2']) . "',city3 = '" . $this->db->escape($data['city3']) . "',city4 = '" . $this->db->escape($data['city4']) . "',city5 = '" . $this->db->escape($data['city5']) . "',city6 = '" . $this->db->escape($data['city6']) . "',city7 = '" . $this->db->escape($data['city7']) . "',city8 = '" . $this->db->escape($data['city8']) . "',city9 = '" . $this->db->escape($data['city9']) . "',city10 = '" . $this->db->escape($data['city10']) . "',city11 = '" . $this->db->escape($data['city11']) . "',city12 = '" . $this->db->escape($data['city12']) . "',city13 = '" . $this->db->escape($data['city13']) . "',city14 = '" . $this->db->escape($data['city14']) . "',city15 = '" . $this->db->escape($data['city15']) . "',city16 = '" . $this->db->escape($data['city16']) . "',city17 = '" . $this->db->escape($data['city17']) . "',city18 = '" . $this->db->escape($data['city18']) . "',city19 = '" . $this->db->escape($data['city19']) . "',city20 = '" . $this->db->escape($data['city20']) . "',abstract = '" . $this->db->escape($data['abstract']) . "',keyword = '" . $this->db->escape($data['keyword']) . "',news_percent = '" . $this->db->escape($data['news_percent']) . "',angry_percent = '" . $this->db->escape($data['angry_percent']) . "',sad_percent = '" . $this->db->escape($data['sad_percent']) . "',happy_percent = '" . $this->db->escape($data['happy_percent']) . "',point1 = '" . $this->db->escape($data['point1']) . "',point2 = '" . $this->db->escape($data['point2']) . "',point3 = '" . $this->db->escape($data['point3']) . "',point4 = '" . $this->db->escape($data['point4']) . "',point5 = '" . $this->db->escape($data['point5']) . "',point6 = '" . $this->db->escape($data['point6']) . "',point7 = '" . $this->db->escape($data['point7']) . "',point8 = '" . $this->db->escape($data['point8']) . "',point9 = '" . $this->db->escape($data['point9']) . "',point10 = '" . $this->db->escape($data['point10']) . "', upc = '" . $this->db->escape($data['upc']) . "', ean = '" . $this->db->escape($data['ean']) . "', jan = '" . $this->db->escape($data['jan']) . "', isbn = '" . $this->db->escape($data['isbn']) . "', mpn = '" . $this->db->escape($data['mpn']) . "', location = '" . $this->db->escape($data['location']) . "',  minimum = '" . (int)$data['minimum'] . "', subtract = '" . (int)$data['subtract'] . "', stock_status_id = '" . (int)$data['stock_status_id'] . "', date_available = '" . $this->db->escape($data['date_available']) . "', date_unavailable = '" . $this->db->escape($data['date_unavailable']) . "', manufacturer_id = '" . (int)$data['manufacturer_id'] . "', shipping = '" . (int)$data['shipping'] . "',  points = '" . (int)$data['points'] . "', weight = '" . (float)$data['weight'] . "', weight_class_id = '" . (int)$data['weight_class_id'] . "', length = '" . (float)$data['length'] . "', width = '" . (float)$data['width'] . "', height = '" . (float)$data['height'] . "', length_class_id = '" . (int)$data['length_class_id'] . "', status = '1', tax_class_id = '" . $this->db->escape($data['tax_class_id']) . "', sort_order = '" . (int)$data['sort_order'] . "', date_modified = NOW() WHERE case_id = '" . (int)$case_id . "'");
 
 		if (isset($data['image'])) {
 			$this->db->query("UPDATE " . DB_PREFIX . "`case` SET image = '" . $this->db->escape(html_entity_decode($data['image'], ENT_QUOTES, 'UTF-8')) . "' WHERE case_id = '" . (int)$case_id . "'");
@@ -909,6 +909,43 @@ class ModelCatalogCase extends Model {
 			$data = $query->row;
 
 			$data['sku'] = '';
+			$data['city1'] = '';
+			$data['city2'] = '';
+			$data['city3'] = '';
+			$data['city4'] = '';
+			$data['city5'] = '';
+			$data['city6'] = '';
+			$data['city7'] = '';
+			$data['city7'] = '';
+			$data['city8'] = '';
+			$data['city9'] = '';
+			$data['city10'] = '';
+			$data['city11'] = '';
+			$data['city12'] = '';
+			$data['city13'] = '';
+			$data['city14'] = '';
+			$data['city15'] = '';
+			$data['city16'] = '';
+			$data['city17'] = '';
+			$data['city18'] = '';
+			$data['city19'] = '';
+			$data['city20'] = '';
+			$data['point1'] = '';
+			$data['point2'] = '';
+			$data['point3'] = '';
+			$data['point4'] = '';
+			$data['point5'] = '';
+			$data['point6'] = '';
+			$data['point7'] = '';
+			$data['point8'] = '';
+			$data['point9'] = '';
+			$data['point10'] = '';
+			$data['abstract'] = '';
+			$data['keyword'] = '';
+			$data['news_percent'] = '';
+			$data['angry_percent'] = '';
+			$data['sad_percent'] = '';
+			$data['happy_percent'] = '';
 			$data['upc'] = '';
 			$data['viewed'] = '0';
 			$data['keyword'] = '';
@@ -1077,6 +1114,150 @@ class ModelCatalogCase extends Model {
 			if (!empty($data['filter_name'])) {
 				$sql .= " OR LCASE(p.sku) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
 			}	
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city1) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city2) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city3) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+			
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city4) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city5) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+			
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city6) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city7) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+			
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city8) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city9) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+			
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city10) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city11) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city12) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city13) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+			
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city14) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city15) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+			
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city16) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city17) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+			
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city18) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city19) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+			
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.city20) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.point1) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.point2) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.point3) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+			
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.point4) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.point5) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+			
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.point6) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.point7) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+			
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.point8) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.point9) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+			
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.point10) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.news_percent) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.angry_percent) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.sad_percent) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+			
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.happy_percent) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.abstract) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
+			
+			if (!empty($data['filter_name'])) {
+				$sql .= " OR LCASE(p.keyword) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";
+			}
 
 			if (!empty($data['filter_name'])) {
 				$sql .= " OR LCASE(p.upc) = '" . $this->db->escape(utf8_strtolower($data['filter_name'])) . "'";

@@ -37,6 +37,37 @@ $_['column_status']              = '状态';
 $_['column_action']              = '管理';
 
 // Entry
+$_['entry_point1']                 = '拐点1';
+$_['entry_point2']                 = '拐点2';
+$_['entry_point3']                 = '拐点3';
+$_['entry_point4']                 = '拐点4';
+$_['entry_point5']                 = '拐点5';
+$_['entry_point6']                 = '拐点6';
+$_['entry_point7']                 = '拐点7';
+$_['entry_point8']                 = '拐点8';
+$_['entry_point9']                 = '拐点9';
+$_['entry_point10']                = '拐点10';
+$_['entry_city1']                  = '城市1';
+$_['entry_city2']                  = '城市2';
+$_['entry_city3']                  = '城市3';
+$_['entry_city4']                  = '城市4';
+$_['entry_city5']                  = '城市5';
+$_['entry_city6']                  = '城市6';
+$_['entry_city7']                  = '城市7';
+$_['entry_city8']                  = '城市8';
+$_['entry_city9']                  = '城市9';
+$_['entry_city10']                 = '城市10';
+$_['entry_city11']                 = '城市11';
+$_['entry_city12']                 = '城市12';
+$_['entry_city13']                 = '城市13';
+$_['entry_city14']                 = '城市14';
+$_['entry_city15']                 = '城市15';
+$_['entry_city16']                 = '城市16';
+$_['entry_city17']                 = '城市17';
+$_['entry_city18']                 = '城市18';
+$_['entry_city19']                 = '城市19';
+$_['entry_city20']                 = '城市20';
+
 $_['entry_name']                 = '&nbsp;&nbsp;案例名称：';
 $_['entry_label']                = '&nbsp;&nbsp;标签：';
 $_['entry_keyfigures']           = '&nbsp;&nbsp;关键人物：';
@@ -81,6 +112,18 @@ $_['entry_option_value']         = '&nbsp;&nbsp;选项数值：';
 $_['entry_required']             = 'Required：';
 $_['entry_status']               = '&nbsp;&nbsp;案例状态：';
 $_['entry_sort_order']           = '&nbsp;&nbsp;选项排序：';
+
+$_['entry_abstract']             = '&nbsp;&nbsp;案例摘要：';
+$_['entry_citylist']             = '&nbsp;&nbsp;热点转发城市列表：';
+$_['entry_keywordlist']          = '&nbsp;&nbsp;关键词列表：';
+$_['entry_news']                 = '&nbsp;&nbsp;中性：';
+$_['entry_happy']                = '&nbsp;&nbsp;高兴：';
+$_['entry_sad']                  = '&nbsp;&nbsp;悲伤：';
+$_['entry_angry']                = '&nbsp;&nbsp;愤怒：';
+$_['entry_pie']                  = '&nbsp;&nbsp;情绪占比：';
+$_['entry_pointlist']            = '&nbsp;&nbsp;情绪拐点：';
+
+
 $_['entry_category']             = '&nbsp;&nbsp;案例分类：<br /><span class="help">(自动完成)</span>';
 $_['entry_filter']           	 = '&nbsp;&nbsp;案例筛选：<br /><span class="help">(自动完成)</span>';
 $_['entry_download']             = '&nbsp;&nbsp;下载案例：<br /><span class="help">(自动完成)</span>';
