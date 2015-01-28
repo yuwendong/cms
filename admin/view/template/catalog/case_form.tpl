@@ -44,11 +44,7 @@
             </tr> 
             <tr>
               <td><?php echo $entry_abstract; ?></td>
-              <td><input type="text" name="abstract" value="<?php echo $abstract; ?>" size="100px"/></td>
-            </tr>
-            <tr>
-              <td><?php echo $entry_keywordlist; ?></td>
-              <td><input type="text" name="keyword" value="<?php echo $keyword; ?>" size="100px"/></td>
+              <td><textarea name="abstract" cols="140" rows="10"><?php echo $abstract; ?></textarea></td>
             </tr>
             <tr>
               <td><?php echo $entry_pie; ?></td>
